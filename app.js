@@ -126,9 +126,16 @@ const promptProject = portfolioData => {
   };
 promptUser()
     .then(promptProject)
-    .then(portfolioData => {
+     .then(portfolioData => {
         console.log(portfolioData);
-    });
+    //     const pageHTML = generatePage();
+
+    //     fs.writeFile('./index.html', pageHTML, err => {
+    //       if (err) throw new Error(err);
+
+    //       console.log('Page created! Check out index.html in this directory to see it!');
+    //     });
+});
 // promptUser().then(answers => console.log(answers));
 // const fs = require('fs');
 // const generatePage = require('./src/page-template.js');
